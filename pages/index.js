@@ -7,21 +7,24 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.title}>
       <h1>Homepage</h1>
-      <p>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
         omnis! Soluta totam sunt saepe, sapiente ipsa atque similique dolor
         dolore repellendus! Illum provident deleniti vero beatae similique quam
         cupiditate eos.
       </p>
-      <p>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
         omnis! Soluta totam sunt saepe, sapiente ipsa atque similique dolor
         dolore repellendus! Illum provident deleniti vero beatae similique quam
         cupiditate eos.
       </p>
-      <Link href="/users"> See Users Listing</Link>
+      <Link className={styles.btn} href="/users">
+        {" "}
+        See Users Listing
+      </Link>
     </div>
   );
 }
