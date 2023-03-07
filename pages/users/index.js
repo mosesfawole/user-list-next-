@@ -18,11 +18,11 @@ const Users = ({ users }) => {
       <h1>All Users</h1>
 
       {users.map((user) => (
-        <div className="" key={user.id}>
-          <Link className={styles.single} href={"#"}>
+        <Link className="" href={`/users/${user.id}`} key={user.id}>
+          <div className={styles.single}>
             <h3>{user.name}</h3>
-          </Link>
-        </div>
+          </div>
+        </Link>
       ))}
     </div>
   );
