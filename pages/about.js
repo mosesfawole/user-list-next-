@@ -1,8 +1,12 @@
-import React from "react";
+import Head from "next/head";
 
 const about = () => {
   return (
     <div>
+      <Head>
+        <title> User list | About</title>
+        <meta name="keywords" content="users" />
+      </Head>
       <h1>About</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, voluptate,
